@@ -1,10 +1,56 @@
 These are my notes on the project task page. This project is called "Sea Level Predictor." The URL for the page which these notes are on is https://www.freecodecamp.org/learn/data-analysis-with-python/data-analysis-with-python-projects/sea-level-predictor
 
-- Clone the project boilerplate files in a Gitpod environment 
 - Complete the course material before starting the project: 
 	-> Python for Everybody Video Course (14 hours) <- https://www.freecodecamp.org/news/python-for-everybody/
 	-> How to Analyze Data with Python Pandas (10 hours) <- https://www.freecodecamp.org/news/how-to-analyze-data-with-python-pandas/
 - Visualising and making calculations from medical examination data 
-	-> We are using matplotlib, seaborn, and pandas for this 
+	-> We are using matplotlib, seaborn, and pandas for this
+ 
+- We then clone the project boilerplate files in a Gitpod environment 
 
-- 
+- We are provided a dataset:
+	-> Global average sea level changes since 1880
+	-> We are using this data to predict the sea level change through to the year 2050
+	-> The data we are using is, "Global Average Absolute Sea Level Change, 1880-2014 from the US Environmental Protection Agency using data from CSIRO, 2015; NOAA, 2015."
+	-> There exists open source data we can use for projects like this <- but in this case the data being used is credited back to the source; global copyright laws
+
+- What we are doing:
+	-> Importing the data:
+		-> We are importing the data from epa-sea-level.csv <- using Pandas 
+		-> This data contains information about the global sea level over time 
+
+	-> Using matplotlib to create a scatter plot: 
+		-> `Year` on the x
+		-> `CSIRO Adjusted Sea Level` on the y 
+		-> Entire columns of the dataset go on the x and y axes 
+		-> So the gradient is the sea level per unit time 
+
+	-> Performing linear regression:
+		-> From the start of the dataset until 2050:
+			-> So the previous plot that we would have created is for the sea level vs the year (sea level against time)
+			-> Then we want to generate a linear regression line for this scatter plot 
+			-> We want this line to go through the year 2050, so we can predict the sea level rise for this year 
+			-> This is done with the linregress function from scipy.stats <- This returns us the slope and intercept for the line of best fit 
+
+		-> Then plotting a line of best fit from 2000 until the most recent year in the dataset:
+			-> A new line of best fit from 2000 until the most recent year in the dataset
+			-> We want this line to carry on going until it passes through the year 2050 
+			-> The rate of global sea level rise (the gradient of this graph) 
+			-> We should have two different lines of best fit for this, depending on the start and end years which they have been extrapolated from 
+
+		-> The titles / axes of these plots: 
+			-> We want `Year` on the x 
+			-> Then `Sea Level (inches)` on the y 
+			-> `Rise in Sea Level` <- The title label
+
+-> The different Python .py files in this project:
+	-> Then we want to save and return the image of the file 
+	-> sea_level_predictor.py <- We are writing the code in this file 
+	-> test_module.py <- This contains the test module 
+	-> main.py <- This is the Python file where we can test the code we are writing 
+		-> The tests from the test_module.py file are imported into this file 
+
+-> To submit the project:
+	-> We complete the project in the Gitpod environment 
+	-> When all of the tests are passing, we push the project files to a GitHub repository 
+	-> Then we submit the URL to that GitHub repository to the same URL which these notes are made on (the URL for this is at the top of this .txt file)
