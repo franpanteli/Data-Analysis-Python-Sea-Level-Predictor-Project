@@ -1,48 +1,50 @@
 # We first import modules <- Pandas, matplotlib, numpy and scipy
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 """
-We are then defining a plotting function: 
-	-> This plots sea level data over time 
-	-> We want to use this to make predictions about the sea level in 2050, by performing a linear 
-        regression analysis 
+    We are then defining a plotting function: 
+        -> This plots sea level data over time 
+        -> We want to use this to make predictions about the sea level in 2050, by performing a linear 
+            regression analysis 
 
-We first import the data:
-	-> This is data which shows the global sea level for a given year 
-	-> We are provided this data in a CSV file and are importing it in 
-	-> This is loaded into a `df` variable, using the `read_csv` method 
+    We first import the data:
+        -> This is data which shows the global sea level for a given year 
+        -> We are provided this data in a CSV file and are importing it in 
+        -> This is loaded into a `df` variable, using the `read_csv` method 
 
-Then generating a scatter plot from this:
-	-> We do this using the .scatter method 
-	-> We are plotting the time on the x and the sea level on the y 
-	-> We were told to do this in the project instructions
-	-> At the end of the plotting function, we are also defining the values for the x and y axes of the 
-        plot, and for its title 
+    Then generating a scatter plot from this:
+        -> We do this using the .scatter method 
+        -> We are plotting the time on the x and the sea level on the y 
+        -> We were told to do this in the project instructions
+        -> At the end of the plotting function, we are also defining the values for the x and y axes of the 
+            plot, and for its title 
 
-Saving the plot:
-	-> Since this is a plotting function, we want it to save the plot and output it 
-	-> When the function is called, this will return our plot 
-	-> This is saved as sea_level_plot.png, using the savefig method 
-	-> The .gca method is used (get current axis), in case we want to change the axes for example before 
-        the plot is saved when calling the function 
-	-> Our plotting function is internally keeping track of the coordinate system and returning the axis 
-        object 
+    Saving the plot:
+        -> Since this is a plotting function, we want it to save the plot and output it 
+        -> When the function is called, this will return our plot 
+        -> This is saved as sea_level_plot.png, using the savefig method 
+        -> The .gca method is used (get current axis), in case we want to change the axes for example before 
+            the plot is saved when calling the function 
+        -> Our plotting function is internally keeping track of the coordinate system and returning the axis 
+            object 
 
-Drawing regression lines:
-	-> We want two regression lines, which are each added in with the third and fourth block in this code 
-	-> linregress <- We are using this to calculate the slope and intercept 
-	-> We are doing this for the input data which is plotted
-	-> The first line uses all of the data as the input <- and then extends the slope until 2050 using iloc 
--> The second line uses the data from 2,000 onwards and creates a boolean mask to do this 
-	-> We are again using the linregress function to calculate the gradient and intercept of the slope 
+    Drawing regression lines:
+        -> We want two regression lines, which are each added in with the third and fourth block in this code 
+        -> linregress <- We are using this to calculate the slope and intercept for these regression lines
+        -> We are doing this for the input data which is plotted
+        -> The first line uses all of the data as the input <- and then extends the slope until 2050, using iloc 
+    -> The second line uses the data from 2,000 onwards and creates a boolean mask to do this 
+        -> We are again using the linregress function to calculate the gradient and intercept of the slope 
 
-The overall stages of defining this plotting function are:
-    -> Importing data
-    -> Creating the time series plot 
-    -> Adding a regression line to the plot
-    -> Adding a second regression line to the plot <- This uses the same approach as the first one, just with a 
-        different date range
-    -> Adding axis titles to the plot 
-    -> Saving and returning the plot 
+    The overall stages of defining this plotting function are:
+        -> Importing data
+        -> Creating the time series plot 
+        -> Adding a regression line to the plot
+        -> Adding a second regression line to the plot <- This uses the same approach as the first one, just with a 
+            different date range
+                -> We are creating lines of best fit to predict the gobal sea level rise at 2050 - using two different 
+                    data ranges 
+        -> Adding axis titles to the plot 
+        -> Saving and returning the plot 
 """
 
 import pandas as pd
