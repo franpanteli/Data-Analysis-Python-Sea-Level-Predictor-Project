@@ -1,6 +1,6 @@
 # Python-Data-Analysis-Sea-Level-Predictor-Project
 ### About This Repository
-I independently completed freeCodeCamp's [Data Analysis with Python](https://www.freecodecamp.org/learn/data-analysis-with-python#data-analysis-with-python-course) certification, to invest in my data analytics skills with Python. This repository contains my independent problem-solving work as part of the [fifth project](https://www.freecodecamp.org/learn/data-analysis-with-python/data-analysis-with-python-projects/sea-level-predictor) in this curriculum. I devised a Python script for this, which used Numpy to produce plots by analysing medical data. 
+I independently completed freeCodeCamp's [Data Analysis with Python](https://www.freecodecamp.org/learn/data-analysis-with-python#data-analysis-with-python-course) certification, to invest in my data analytics skills with Python. This repository contains my independent problem-solving work as part of the [fifth project](https://www.freecodecamp.org/learn/data-analysis-with-python/data-analysis-with-python-projects/sea-level-predictor) in this curriculum. I devised a Python script for this, which used linear regression with SciPy, to produce predictions of global sea level rise by 2050.
 
 ### Workflow
 #### Task Brief
