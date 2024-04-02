@@ -9,7 +9,7 @@ This plot was to be produced by a plotting function (`draw_plot`), written with 
 
 <img width="533" alt="Screenshot 2024-04-02 at 15 30 57" src="https://github.com/franpanteli/Data-Analysis-Python-Sea-Level-Predictor-Project/assets/131474705/6ea2168c-aa73-4b92-bb4f-ba4d987c3c74">
 
-Project files were pushed to this repository once all unit tests ([test_module.py](https://github.com/franpanteli/Data-Analysis-Python-Sea-Level-Predictor-Project/blob/main/test_module.py) and [main.py](https://github.com/franpanteli/Data-Analysis-Python-Sea-Level-Predictor-Project/blob/main/main.py)) had successfully passed and its URL was submitted. This aided in developing statistical and data analytics skills with Numpy and marked the completion of the final project in the course as part of my independent self-study. 
+Project files were pushed to this repository once all unit tests ([test_module.py](https://github.com/franpanteli/Data-Analysis-Python-Sea-Level-Predictor-Project/blob/main/test_module.py) and [main.py](https://github.com/franpanteli/Data-Analysis-Python-Sea-Level-Predictor-Project/blob/main/main.py)) had successfully passed and its URL was submitted. This aided in developing statistical and data analytics skills with Numpy and marked the completion of the final project in the course, as part of my independent self-study. 
 
 ### To Clone This Repository
 ```
